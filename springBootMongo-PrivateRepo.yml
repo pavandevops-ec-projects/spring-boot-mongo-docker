@@ -11,10 +11,8 @@ spec:
       labels:
         name: springboot
     spec:
-      imagePullSecrets:
-      - name: dockerreposecret
       containers:
-      - image: gpavandocker/spring-boot-mongo:1 
+      - image: gpavandocker/spring-boot-mongo
         name: springboot
         ports:
         - name: springboot
